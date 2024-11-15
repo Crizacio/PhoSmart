@@ -11,8 +11,9 @@
 <body>
     <header></header>
     <section class="container">
-    {% block cuerpo %}
-    {% endblock %}
+        {% include 'mensajes.html' %}
+        {% block cuerpo %}
+        {% endblock %}
     </section>
     <footer></footer>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
