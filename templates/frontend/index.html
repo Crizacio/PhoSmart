@@ -2,6 +2,39 @@
 {% load static %}
 
 {% block cuerpo %}
-<i class="bi bi-hand-thumbs-up-fill"></i>
-<h1>Hola!</h1>
+<h2>Sala 1</h2>
+<ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between lh-sm">
+        <div>   
+            <h6 class="my-0">Temperatura</h6>
+        </div>
+        <span class="text-body-secondary">{{ temperatura }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between lh-sm">
+        <div>
+            <h6 class="my-0">Humedad</h6>
+        </div>
+        <span class="text-body-secondary">{{ humedad }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between lh-sm">
+        <div>
+            <h6 class="my-0">Lux</h6>
+        </div>
+        <span class="text-body-secondary">{{ lux }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between lh-sm">
+        <div>
+            <h6 class="my-0">Cortina</h6>
+            <small class="text-body-secondary">Nivel de cerrado</small>
+        </div>
+        <span class="text-body-secondary">{{ actuadores.cortina }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between lh-sm">
+        <div>
+            <h6 class="my-0">Ampolleta</h6>
+            <small class="text-body-secondary">Dimming</small>
+        </div>
+        <span class="text-body-secondary">{{ actuadores.luz }}</span>
+    </li>
+</ul>
 {% endblock %}
